@@ -29,7 +29,7 @@ class TeleStyleLoader:
     def load_all(self, dtype):
         device = torch.device("cuda")
         repo_id = "Danzelus/TeleStyle_comfy"
-        base_path = os.path.join(folder_paths.models_dir, "telestyle_models")
+        base_path = os.path.join(folder_paths.models_dir, "telestyle")
         
         if dtype == "bf16":
             target_dtype = torch.bfloat16
